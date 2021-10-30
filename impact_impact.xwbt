@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=E:\projects\Xilinx\LCD_Project\impact.xsl
+OUTFILE=E:\projects\Xilinx\LCD_Project\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=E:\projects\Xilinx\LCD_Project
+LICENSE=iMPACT
+USER_INFO=iMPACT

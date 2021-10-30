@@ -1,0 +1,9 @@
+Storage Target: SPI Flash Single FPGA
+16M
+FF
+Untitled
+E:\projects\Xilinx\LCD_Project/
+
+MCS
+No
+No

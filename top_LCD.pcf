@@ -1,0 +1,310 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Feb 13 23:19:15 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "de" LOCATE = SITE "R2" LEVEL 1;
+COMP "rst" LOCATE = SITE "L3" LEVEL 1;
+COMP "b<0>" LOCATE = SITE "R9" LEVEL 1;
+COMP "b<1>" LOCATE = SITE "T12" LEVEL 1;
+COMP "b<2>" LOCATE = SITE "L8" LEVEL 1;
+COMP "b<3>" LOCATE = SITE "T9" LEVEL 1;
+COMP "b<4>" LOCATE = SITE "R7" LEVEL 1;
+COMP "b<5>" LOCATE = SITE "T7" LEVEL 1;
+COMP "b<6>" LOCATE = SITE "T5" LEVEL 1;
+COMP "b<7>" LOCATE = SITE "T6" LEVEL 1;
+COMP "g<0>" LOCATE = SITE "R16" LEVEL 1;
+COMP "g<1>" LOCATE = SITE "P15" LEVEL 1;
+COMP "g<2>" LOCATE = SITE "T15" LEVEL 1;
+COMP "g<3>" LOCATE = SITE "R15" LEVEL 1;
+COMP "g<4>" LOCATE = SITE "T14" LEVEL 1;
+COMP "g<5>" LOCATE = SITE "R14" LEVEL 1;
+COMP "g<6>" LOCATE = SITE "R12" LEVEL 1;
+COMP "g<7>" LOCATE = SITE "T13" LEVEL 1;
+COMP "r<0>" LOCATE = SITE "K16" LEVEL 1;
+COMP "r<1>" LOCATE = SITE "J16" LEVEL 1;
+COMP "r<2>" LOCATE = SITE "L16" LEVEL 1;
+COMP "r<3>" LOCATE = SITE "K15" LEVEL 1;
+COMP "r<4>" LOCATE = SITE "M15" LEVEL 1;
+COMP "r<5>" LOCATE = SITE "M16" LEVEL 1;
+COMP "r<6>" LOCATE = SITE "P16" LEVEL 1;
+COMP "r<7>" LOCATE = SITE "N16" LEVEL 1;
+COMP "key1" LOCATE = SITE "C3" LEVEL 1;
+COMP "key2" LOCATE = SITE "D3" LEVEL 1;
+COMP "clk_LCD" LOCATE = SITE "T4" LEVEL 1;
+COMP "clk_in" LOCATE = SITE "T8" LEVEL 1;
+COMP "h_sync" LOCATE = SITE "R5" LEVEL 1;
+COMP "v_sync" LOCATE = SITE "R1" LEVEL 1;
+PIN RAMB16BWER_top_pins<28> = BEL "RAMB16BWER_top" PINNAME CLKA;
+PIN RAMB16BWER_top_pins<29> = BEL "RAMB16BWER_top" PINNAME CLKB;
+PIN RAMB16BWER_bottom_pins<28> = BEL "RAMB16BWER_bottom" PINNAME CLKA;
+PIN RAMB16BWER_bottom_pins<29> = BEL "RAMB16BWER_bottom" PINNAME CLKB;
+PIN
+        my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>
+        = BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKB;
+PIN SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0> = BEL "SP6_BUFIO_INSERT_ML_BUFIO2_0"
+        PINNAME DIVCLK;
+PIN pll/dcm_sp_inst_pins<4> = BEL "pll/dcm_sp_inst" PINNAME CLKIN;
+TIMEGRP sys_clk_pin = BEL "ch_dir/state_FSM_FFd2" BEL "ch_dir/state_FSM_FFd1"
+        BEL "my_build_snake/state_FSM_FFd4" BEL
+        "my_build_snake/state_FSM_FFd12" BEL "my_build_snake/state_FSM_FFd5"
+        BEL "my_build_snake/state_FSM_FFd13" BEL
+        "my_build_snake/state_FSM_FFd2" BEL "my_build_snake/state_FSM_FFd6"
+        BEL "my_build_snake/state_FSM_FFd14" BEL
+        "my_build_snake/state_FSM_FFd3" BEL "my_build_snake/state_FSM_FFd7"
+        BEL "my_build_snake/state_FSM_FFd15" BEL
+        "my_build_snake/init_state_FSM_FFd1" BEL
+        "my_build_snake/init_state_FSM_FFd2" BEL "my_build_snake/counter_27"
+        BEL "my_build_snake/counter_26" BEL "my_build_snake/counter_25" BEL
+        "my_build_snake/counter_24" BEL "my_build_snake/counter_23" BEL
+        "my_build_snake/counter_22" BEL "my_build_snake/counter_21" BEL
+        "my_build_snake/counter_20" BEL "my_build_snake/counter_19" BEL
+        "my_build_snake/counter_18" BEL "my_build_snake/counter_17" BEL
+        "my_build_snake/counter_16" BEL "my_build_snake/counter_15" BEL
+        "my_build_snake/counter_14" BEL "my_build_snake/counter_13" BEL
+        "my_build_snake/counter_12" BEL "my_build_snake/counter_11" BEL
+        "my_build_snake/counter_10" BEL "my_build_snake/counter_9" BEL
+        "my_build_snake/counter_8" BEL "my_build_snake/counter_7" BEL
+        "my_build_snake/counter_6" BEL "my_build_snake/counter_5" BEL
+        "my_build_snake/counter_4" BEL "my_build_snake/counter_3" BEL
+        "my_build_snake/counter_2" BEL "my_build_snake/counter_1" BEL
+        "my_build_snake/counter_0" BEL "my_build_snake/state_FSM_FFd1" BEL
+        "my_build_snake/state_FSM_FFd8" BEL "my_build_snake/state_FSM_FFd10"
+        BEL "my_build_snake/state_FSM_FFd11" BEL
+        "my_build_snake/state_FSM_FFd16" BEL "my_build_snake/state_FSM_FFd18"
+        BEL "my_build_snake/state_FSM_FFd17" BEL "my_build_snake/mainy_pos_5"
+        BEL "my_build_snake/mainy_pos_4" BEL "my_build_snake/mainy_pos_3" BEL
+        "my_build_snake/mainy_pos_2" BEL "my_build_snake/mainy_pos_1" BEL
+        "my_build_snake/mainy_pos_0" BEL "my_build_snake/mainx_pos_5" BEL
+        "my_build_snake/mainx_pos_4" BEL "my_build_snake/mainx_pos_3" BEL
+        "my_build_snake/mainx_pos_2" BEL "my_build_snake/mainx_pos_1" BEL
+        "my_build_snake/mainx_pos_0" BEL "my_build_snake/tailx_pos_5" BEL
+        "my_build_snake/tailx_pos_4" BEL "my_build_snake/tailx_pos_3" BEL
+        "my_build_snake/tailx_pos_2" BEL "my_build_snake/tailx_pos_1" BEL
+        "my_build_snake/tailx_pos_0" BEL "my_build_snake/doty_pos_5" BEL
+        "my_build_snake/doty_pos_4" BEL "my_build_snake/doty_pos_3" BEL
+        "my_build_snake/doty_pos_2" BEL "my_build_snake/doty_pos_1" BEL
+        "my_build_snake/doty_pos_0" BEL "my_build_snake/dotx_pos_5" BEL
+        "my_build_snake/dotx_pos_4" BEL "my_build_snake/dotx_pos_3" BEL
+        "my_build_snake/dotx_pos_2" BEL "my_build_snake/dotx_pos_1" BEL
+        "my_build_snake/dotx_pos_0" BEL "my_build_snake/write_data_59" BEL
+        "my_build_snake/write_data_58" BEL "my_build_snake/write_data_57" BEL
+        "my_build_snake/write_data_56" BEL "my_build_snake/write_data_55" BEL
+        "my_build_snake/write_data_54" BEL "my_build_snake/write_data_53" BEL
+        "my_build_snake/write_data_52" BEL "my_build_snake/write_data_51" BEL
+        "my_build_snake/write_data_50" BEL "my_build_snake/write_data_49" BEL
+        "my_build_snake/write_data_48" BEL "my_build_snake/write_data_47" BEL
+        "my_build_snake/write_data_46" BEL "my_build_snake/write_data_45" BEL
+        "my_build_snake/write_data_44" BEL "my_build_snake/write_data_43" BEL
+        "my_build_snake/write_data_42" BEL "my_build_snake/write_data_41" BEL
+        "my_build_snake/write_data_40" BEL "my_build_snake/write_data_39" BEL
+        "my_build_snake/write_data_38" BEL "my_build_snake/write_data_37" BEL
+        "my_build_snake/write_data_36" BEL "my_build_snake/write_data_35" BEL
+        "my_build_snake/write_data_34" BEL "my_build_snake/write_data_33" BEL
+        "my_build_snake/write_data_32" BEL "my_build_snake/write_data_31" BEL
+        "my_build_snake/write_data_30" BEL "my_build_snake/write_data_29" BEL
+        "my_build_snake/write_data_28" BEL "my_build_snake/write_data_27" BEL
+        "my_build_snake/write_data_26" BEL "my_build_snake/write_data_25" BEL
+        "my_build_snake/write_data_24" BEL "my_build_snake/write_data_23" BEL
+        "my_build_snake/write_data_22" BEL "my_build_snake/write_data_21" BEL
+        "my_build_snake/write_data_20" BEL "my_build_snake/write_data_19" BEL
+        "my_build_snake/write_data_18" BEL "my_build_snake/write_data_17" BEL
+        "my_build_snake/write_data_16" BEL "my_build_snake/write_data_15" BEL
+        "my_build_snake/write_data_14" BEL "my_build_snake/write_data_13" BEL
+        "my_build_snake/write_data_12" BEL "my_build_snake/write_data_11" BEL
+        "my_build_snake/write_data_10" BEL "my_build_snake/write_data_9" BEL
+        "my_build_snake/write_data_8" BEL "my_build_snake/write_data_7" BEL
+        "my_build_snake/write_data_6" BEL "my_build_snake/write_data_5" BEL
+        "my_build_snake/write_data_4" BEL "my_build_snake/write_data_3" BEL
+        "my_build_snake/write_data_2" BEL "my_build_snake/write_data_1" BEL
+        "my_build_snake/write_data_0" BEL "my_build_snake/rw_address_5" BEL
+        "my_build_snake/rw_address_4" BEL "my_build_snake/rw_address_3" BEL
+        "my_build_snake/rw_address_2" BEL "my_build_snake/rw_address_1" BEL
+        "my_build_snake/rw_address_0" BEL "my_build_snake/wr_en" BEL
+        "my_build_snake/wr_en_fifo" BEL "my_build_snake/rd_en_fifo" BEL
+        "my_build_snake/din_11" BEL "my_build_snake/din_10" BEL
+        "my_build_snake/din_9" BEL "my_build_snake/din_8" BEL
+        "my_build_snake/din_7" BEL "my_build_snake/din_6" BEL
+        "my_build_snake/din_5" BEL "my_build_snake/din_4" BEL
+        "my_build_snake/din_3" BEL "my_build_snake/din_2" BEL
+        "my_build_snake/din_1" BEL "my_build_snake/din_0" BEL
+        "my_build_snake/data_keep_59" BEL "my_build_snake/data_keep_58" BEL
+        "my_build_snake/data_keep_57" BEL "my_build_snake/data_keep_56" BEL
+        "my_build_snake/data_keep_55" BEL "my_build_snake/data_keep_54" BEL
+        "my_build_snake/data_keep_53" BEL "my_build_snake/data_keep_52" BEL
+        "my_build_snake/data_keep_51" BEL "my_build_snake/data_keep_50" BEL
+        "my_build_snake/data_keep_49" BEL "my_build_snake/data_keep_48" BEL
+        "my_build_snake/data_keep_47" BEL "my_build_snake/data_keep_46" BEL
+        "my_build_snake/data_keep_45" BEL "my_build_snake/data_keep_44" BEL
+        "my_build_snake/data_keep_43" BEL "my_build_snake/data_keep_42" BEL
+        "my_build_snake/data_keep_41" BEL "my_build_snake/data_keep_40" BEL
+        "my_build_snake/data_keep_39" BEL "my_build_snake/data_keep_38" BEL
+        "my_build_snake/data_keep_37" BEL "my_build_snake/data_keep_36" BEL
+        "my_build_snake/data_keep_35" BEL "my_build_snake/data_keep_34" BEL
+        "my_build_snake/data_keep_33" BEL "my_build_snake/data_keep_32" BEL
+        "my_build_snake/data_keep_31" BEL "my_build_snake/data_keep_30" BEL
+        "my_build_snake/data_keep_29" BEL "my_build_snake/data_keep_28" BEL
+        "my_build_snake/data_keep_27" BEL "my_build_snake/data_keep_26" BEL
+        "my_build_snake/data_keep_25" BEL "my_build_snake/data_keep_24" BEL
+        "my_build_snake/data_keep_23" BEL "my_build_snake/data_keep_22" BEL
+        "my_build_snake/data_keep_21" BEL "my_build_snake/data_keep_20" BEL
+        "my_build_snake/data_keep_19" BEL "my_build_snake/data_keep_18" BEL
+        "my_build_snake/data_keep_17" BEL "my_build_snake/data_keep_16" BEL
+        "my_build_snake/data_keep_15" BEL "my_build_snake/data_keep_14" BEL
+        "my_build_snake/data_keep_13" BEL "my_build_snake/data_keep_12" BEL
+        "my_build_snake/data_keep_11" BEL "my_build_snake/data_keep_10" BEL
+        "my_build_snake/data_keep_9" BEL "my_build_snake/data_keep_8" BEL
+        "my_build_snake/data_keep_7" BEL "my_build_snake/data_keep_6" BEL
+        "my_build_snake/data_keep_5" BEL "my_build_snake/data_keep_4" BEL
+        "my_build_snake/data_keep_3" BEL "my_build_snake/data_keep_2" BEL
+        "my_build_snake/data_keep_1" BEL "my_build_snake/data_keep_0" BEL
+        "my_build_snake/my_gen/gen_data_11" BEL
+        "my_build_snake/my_gen/gen_data_10" BEL
+        "my_build_snake/my_gen/gen_data_9" BEL
+        "my_build_snake/my_gen/gen_data_8" BEL
+        "my_build_snake/my_gen/gen_data_7" BEL
+        "my_build_snake/my_gen/gen_data_6" BEL
+        "my_build_snake/my_gen/gen_data_5" BEL
+        "my_build_snake/my_gen/gen_data_4" BEL
+        "my_build_snake/my_gen/gen_data_3" BEL
+        "my_build_snake/my_gen/gen_data_2" BEL
+        "my_build_snake/my_gen/gen_data_1" BEL
+        "my_build_snake/my_gen/gen_data_0" BEL "hv_position1/h_sync" BEL
+        "ch_dir/button1/count_15" BEL "ch_dir/button1/count_14" BEL
+        "ch_dir/button1/count_13" BEL "ch_dir/button1/count_12" BEL
+        "ch_dir/button1/count_11" BEL "ch_dir/button1/count_10" BEL
+        "ch_dir/button1/count_9" BEL "ch_dir/button1/count_8" BEL
+        "ch_dir/button1/count_7" BEL "ch_dir/button1/count_6" BEL
+        "ch_dir/button1/count_5" BEL "ch_dir/button1/count_4" BEL
+        "ch_dir/button1/count_3" BEL "ch_dir/button1/count_2" BEL
+        "ch_dir/button1/count_1" BEL "ch_dir/button1/count_0" BEL
+        "ch_dir/button1/key_r_1" BEL "ch_dir/button1/key_r_0" BEL
+        "ch_dir/button2/count_15" BEL "ch_dir/button2/count_14" BEL
+        "ch_dir/button2/count_13" BEL "ch_dir/button2/count_12" BEL
+        "ch_dir/button2/count_11" BEL "ch_dir/button2/count_10" BEL
+        "ch_dir/button2/count_9" BEL "ch_dir/button2/count_8" BEL
+        "ch_dir/button2/count_7" BEL "ch_dir/button2/count_6" BEL
+        "ch_dir/button2/count_5" BEL "ch_dir/button2/count_4" BEL
+        "ch_dir/button2/count_3" BEL "ch_dir/button2/count_2" BEL
+        "ch_dir/button2/count_1" BEL "ch_dir/button2/count_0" BEL
+        "ch_dir/button2/key_r_1" BEL "ch_dir/button2/key_r_0" BEL
+        "my_build_snake/init_done" BEL "ch_dir/button1/key_state" BEL
+        "ch_dir/button2/key_state" BEL "ch_dir/button1/key_down" BEL
+        "ch_dir/button2/key_down" BEL "clk_in_IBUFG_BUFG" PIN
+        "RAMB16BWER_top_pins<28>" PIN "RAMB16BWER_top_pins<29>" PIN
+        "RAMB16BWER_bottom_pins<28>" PIN "RAMB16BWER_bottom_pins<29>" BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i"
+        PIN
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>"
+        PIN
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_9"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_8"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_7"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_6"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_5"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_4"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_3"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_2"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_1"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_0"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_9"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_8"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_7"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_6"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_5"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_3"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_2"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_1"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_0"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_9"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_8"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_7"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_6"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_5"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_4"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_3"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_2"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_1"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_0"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_9"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_8"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_7"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_6"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_5"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_4"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_3"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_2"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_1"
+        BEL
+        "my_build_snake/my_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_0"
+        PIN "SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0>" PIN
+        "pll/dcm_sp_inst_pins<4>";
+PIN ODDR2_inst_pins<1> = BEL "ODDR2_inst" PINNAME CK0;
+TIMEGRP pll_clkfx = BEL "pll/clkout1_buf" BEL "hv_position1/v_count_9" BEL
+        "hv_position1/v_count_8" BEL "hv_position1/v_count_7" BEL
+        "hv_position1/v_count_6" BEL "hv_position1/v_count_5" BEL
+        "hv_position1/v_count_4" BEL "hv_position1/v_count_3" BEL
+        "hv_position1/v_count_2" BEL "hv_position1/v_count_1" BEL
+        "hv_position1/v_count_0" BEL "hv_position1/h_count_9" BEL
+        "hv_position1/h_count_8" BEL "hv_position1/h_count_7" BEL
+        "hv_position1/h_count_6" BEL "hv_position1/h_count_5" BEL
+        "hv_position1/h_count_4" BEL "hv_position1/h_count_3" BEL
+        "hv_position1/h_count_2" BEL "hv_position1/h_count_1" BEL
+        "hv_position1/h_count_0" PIN "ODDR2_inst_pins<1>";
+PIN ODDR2_inst_pins<2> = BEL "ODDR2_inst" PINNAME CK1;
+TIMEGRP pll_clkdv = BEL "pll/clkout2_buf" PIN "ODDR2_inst_pins<2>";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+TS_pll_clkfx = PERIOD TIMEGRP "pll_clkfx" TS_sys_clk_pin * 0.2 HIGH 50%;
+TS_pll_clkdv = PERIOD TIMEGRP "pll_clkdv" TS_sys_clk_pin / 5 HIGH 50%;
+SCHEMATIC END;
+
