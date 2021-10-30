@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=E:\projects\Xilinx\LCD_Project\top_LCD.ncd
-OUTFILE=E:\projects\Xilinx\LCD_Project\top_LCD.bit
-FAMILY=Spartan6
-PART=xc6slx9-2ftg256
-WORKINGDIR=E:\projects\Xilinx\LCD_Project
-LICENSE=WebPack
-USER_INFO=__0_0_0
