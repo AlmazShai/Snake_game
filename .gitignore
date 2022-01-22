@@ -1,10 +1,2 @@
-XilinxISE/*
-!/XilinxISE/source/
-!/XilinxISE/iseconfig/
-!/XIlinxISE/ipcore_dir/
-!*.gise
-!*.xise
-!/.gise
-!/.xise
-
-
+/*
+!/src
